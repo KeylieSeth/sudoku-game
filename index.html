@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <div class="left">
+            <h1 class="title">The Worlds Most Difficult Sudoku</h1>
+            <details class="info">
+                <summary>
+                    <span class="icon">?</span>
+                    <span class="text">How To Play</span>
+                </summary>
+                <p>To solve a Sudoku, every square must contain a number from 1 to 9. Each number must appear exactly once in every 3×3 box, in every row, and in every column.</p>
+                <p></p>
+                <b>Tools:</b>
+                <p><img src="pen.PNG">Add or remove notes in a square.</p>
+                <p><img class="e" src="eraser.PNG">Activate it, then select a square to clear all its notes.</p>
+                <p><img src="bulb.PNG">Reveals one correct number.</p>
+            </details>
+            <p class="intro">In 2012, the Finnish mathematician Arto Inkala created what is widely considered the hardest solvable Sudoku puzzle in the world. The numerical puzzle took Inkala three months to complete and in a sudoku leveling system where 1 is considered for beginners and 5 takes longer to complete, Inkalas sudoku is reated as an 11 on the difficulty scale.</p>
+        </div>
+        <div class="center">
+            <div class = "life">
+                <span class ="heart heart1">❤️</span>
+                <span class ="heart heart2">❤️</span>
+                <span class ="heart heart3">❤️</span>
+            </div>
+            <div class="sudoku">
+                <div class="block">
+                    <div class="cell g"><p class="given">8</p></div>
+                    <div class="cell" data-value="1"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="2"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="9"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="4"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">3</p></div>
+                    <div class="cell" data-value="6"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">7</p></div>
+                    <div class="cell" data-value="5"><p class="guess"></p><div class="notes"></div></div>
+                </div>
+                <div class="block">
+                    <div class="cell" data-value="7"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="5"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="3"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">6</p></div>
+                    <div class="cell" data-value="8"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="2"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="4"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">9</p></div>
+                    <div class="cell" data-value="1"><p class="guess">1</p><div class="notes"></div></div>
+                </div>
+                <div class="block">
+                    <div class="cell" data-value="6"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="4"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="9"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="1"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="7"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="5"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">2</p></div>
+                    <div class="cell" data-value="8"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="3"><p class="guess"></p><div class="notes"></div></div>
+                </div>
+                <div class="block">
+                    <div class="cell" data-value="1"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">5</p></div>
+                    <div class="cell" data-value="4"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="3"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="6"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="9"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="2"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="8"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="7"><p class="guess"></p><div class="notes"></div></div>
+                </div>
+                <div class="block">
+                    <div class="cell" data-value="2"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="3"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">7</p></div>
+                    <div class="cell" data-value="8"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">4</p></div>
+                    <div class="cell g"><p class="given">5</p></div>
+                    <div class="cell g"><p class="given">1</p></div>
+                    <div class="cell" data-value="6"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="9"><p class="guess"></p><div class="notes"></div></div>
+                </div>
+                <div class="block">
+                    <div class="cell" data-value="8"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="9"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="6"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">7</p></div>
+                    <div class="cell" data-value="2"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="1"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="5"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">3</p></div>
+                    <div class="cell" data-value="4"><p class="guess"></p><div class="notes"></div></div>
+                </div>
+                <div class="block">
+                    <div class="cell" data-value="5"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="2"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">1</p></div>
+                    <div class="cell" data-value="4"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="3"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">8</p></div>
+                    <div class="cell" data-value="7"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">9</p></div>
+                    <div class="cell" data-value="6"><p class="guess"></p><div class="notes"></div></div>
+                </div>
+                <div class="block">
+                    <div class="cell" data-value="9"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="7"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="4"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">5</p></div>
+                    <div class="cell" data-value="2"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="6"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="3"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="1"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="8"><p class="guess"></p><div class="notes"></div></div>
+                </div>
+                <div class="block">
+                    <div class="cell" data-value="3"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">6</p></div>
+                    <div class="cell g"><p class="given">8</p></div>
+                    <div class="cell" data-value="9"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">1</p></div>
+                    <div class="cell" data-value="7"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell g"><p class="given">4</p></div>
+                    <div class="cell" data-value="5"><p class="guess"></p><div class="notes"></div></div>
+                    <div class="cell" data-value="2"><p class="guess"></p><div class="notes"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class = "numberBox">
+                <div class="symbolContainer">
+                    <div class ="symbols">
+                        <button class ="pen">
+                            <img class ="icon1" src="pen.PNG">
+                            <img class="icon2 hidden" src="pen2.PNG">
+                        </button>
+                        <button class ="eraser">
+                            <img class="icon1" src="eraser.PNG">
+                            <img class="icon2 hidden" src="eraser2.PNG">
+                        </button>
+                        <button class ="bulb">
+                            <img class="icon1" src="bulb.PNG">
+                            <img class="icon2 hidden" src="bulb2.PNG">
+                        </button>
+                </div>
+                <div class="numbers">
+                    <button class="number 1"><p>1</p></button>
+                    <button class="number 2"><p>2</p></button>
+                    <button class="number 3"><p>3</p></button>
+                    <button class="number 4"><p>4</p></button>
+                    <button class="number 5"><p>5</p></button>
+                    <button class="number 6"><p>6</p></button>
+                    <button class="number 7"><p>7</p></button>
+                    <button class="number 8"><p>8</p></button>
+                    <button class="number 9"><p>9</p></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- First box when game over. -->
+    <div class ="gameOverBox box1">
+        <p class="gameOverText">Game over</p>
+        <p class ="text">Would you like to play again?</p>
+        <div class ="buttonRow">
+            <button class ="yes">Yes</button>
+            <button class="no">No</button>
+        </div>
+    </div>
+    <!-- Second box when "no" in gameOverBox 1 is choosen. -->
+    <div class ="gameOverBox box2">
+        <p class="gameOverText">Thanks for playing!</p>
+        <button class="reload">Click here to reload the page.</button>
+    </div>
+    <!-- Third box when the game is won. -->
+    <div class ="gameOverBox box3">
+        <p class="gameOverText">Congratulations you solved the Sudoku!</p>
+        <div class ="buttonRow2">
+            <button class ="playAgain">Play Again</button>
+            <button class="close">Close</button>
+            </div>
+    </div>
+    <img class = "fireworks" src="Fireworks.png" width="350" height="200">
+
+<script src="script.js"></script>
+</body>
+</html>
