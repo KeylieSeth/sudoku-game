@@ -370,6 +370,8 @@ h1, p {
     align-items: center;
     width: 70px;
     height: 70px;
+
+    -webkit-tap-highlight-color: transparent;
 }
 
 .symbols button:focus-visible {
@@ -542,28 +544,47 @@ body.show-overlay::after {
     display: none;
 }
 
-/* ===== LARGE MONITOR VIEWING ===== */
-@media (max-width: 2600px) {
-  .left {
-    margin-top: 125px;
-  }
-
-  .info {
-    top: 135px;
-  }
+/* ===== MONITOR VIEWING ===== */
+@media (min-width: 769px) {
+    .left {
+        top: 50px;
+    }
 }
 
 /* ===== PHONE VIEWING ===== */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .layout {
         display: grid;
         grid-template-columns: 1fr;
     }
 
+    .center {
+        min-width: 0;
+    }
+
+    .title {
+        top: 30px;
+        padding: 5px;
+        padding-top: 0;
+    }
     .intro {
         position: relative;
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+    }
+
+    .sudoku {
+        height: auto;
+        width: 96vw;
+    }
+
+    .symbols {
+        background: none;
+        border: none;
     }
 
     .numbers {
