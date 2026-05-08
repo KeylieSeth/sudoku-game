@@ -543,12 +543,33 @@ body.show-overlay::after {
 }
 
 /* ===== LARGE MONITOR VIEWING ===== */
-@media (min-width: 1700px) {
+@media (max-width: 2600px) {
   .left {
-    padding-top: 100px;
+    margin-top: 125px;
   }
 
   .info {
-    top: 200px;
+    top: 135px;
   }
+}
+
+/* ===== PHONE VIEWING ===== */
+@media (max-width: 768px) {
+    .layout {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .intro {
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .numbers {
+        display: flex;
+        padding: 10px;
+        gap: 5px;
+        margin-bottom: 30px;
+    }
 }
