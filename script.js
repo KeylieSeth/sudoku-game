@@ -205,11 +205,16 @@ function handleCorrectGuess(cell, value){
   cell.classList.add("locked");
 
   updateNumberBoard();
-  highlightCompletedNumbers();
+
+  if (!gameWon()) {
+    highlightCompletedNumbers();
+  }
 
   if (gameWon()) {
     hasWon = true;
     gameOverBox3.classList.add("showBox");
+    document.body.classList.add("show-overlay");
+    fireworks.classList.add("show");
   }
 }
 
@@ -473,6 +478,5 @@ function autoSolve() {
     hasWon = true;
     gameOverBox3.classList.add("showBox");
     document.body.classList.add("show-overlay");
-    fireworks.classList.add("show");
   }
 }
